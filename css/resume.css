@@ -80,9 +80,11 @@ h2 {
 }
 
 .home_baner{
-      background: url(../img/1.jpg)no-repeat center 0px;
-    /*overflow-y: scroll;*/
+        background: url(../img/1.jpg);
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*.text_verticle_center_and_right{
@@ -93,7 +95,7 @@ h2 {
     padding-left: 0px;
 }*/
 
-.el {
+/*.el {
   position: relative;
   width: 70%;
   height: 100%;
@@ -122,7 +124,7 @@ h2 {
   border-bottom: 3px solid #faff00;
   border-right: 3px solid #faff00;
 }
-
+*/
 
 /*.el:first-child:after {
       bottom: -20px;
@@ -392,10 +394,12 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #BD5D38 !important; }
+      background-color: #000000 !important;
+    box-shadow: 4px 0px 7px 2px rgba(0,0,0,.5);
+   }
 
 .text-primary {
-  color: #BD5D38 !important; }
+  color: #ffaf18 !important }
 
 a {
   color: #BD5D38; }
@@ -642,7 +646,16 @@ a {
     border: 6px solid #fff;
 }
 
-
+.g_overlay_home{
+      position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    opacity: 1;
+    top: 0;
+    transition: all 1s ease-in-out;
+}
 .g_overlay{
     position: absolute;
     width: 100%;
